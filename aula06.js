@@ -2,17 +2,34 @@ const prompt = require("prompt-sync")();
 
 /*
 
+UMA COISA LEGAL: posso usar o [] para trazer um elemento da string, ou seja a = 'oi', a[1] = 'i'!
+
 IMPORTANTE: quando estiver mexendo com arquivos complexos, tentar executar e fazer aos poucos, verificar etapa por etapa, ou mesmo colocar e testar em outro arquivo limpo so a parte que necessita de teste
 
 array:
 
-o array é um tipo de variavel que pode armazenar qualquer tipo de informação (boolean, number, string), e serve para economizar espaço e ajudar
+o array é um tipo de variavel que pode armazenar qualquer tipo de informação (boolean, number, string E ATE MESMO UMA VARIAVEL OU OUTRO ARRAY, OU MESMO UMA VARIAVEL QUE É UM ARRAY, mas tomar cuidado!), e serve para economizar espaço e ajudar
 o programa a ficar compacto, toda informação coloca no array vai criar um indice (é uma sequencia numerica sequencial feita para depois ser
     possivel encontrar a informação do array)
 
 IMPORTANTE: preferencialmente declare o array como const, pq sera possivel mudar algum valor dentro dela, unica excessao é que n podera
 mudar a lista, ou seja, pegar o "i = [1, 2, 3]" e depois transformar para "i = [4, 5, 6]" pq ai seria totalmente diferente, n esta mudando um valor em especifico
 
+o tamanho do array é definido pelo tanto de informação que tem nele, agora, o ultimo indice é 1 a menos que o tamanho total da array, pelo motivo que o INDICE começa no 0, n confundir tamanho com indice!
+
+posso escrever ela assim:
+
+const array = [
+    "oi",
+    "tchau",
+    "ha"
+];
+
+ou:
+
+const array = ["oi", "tchau", "ha"];
+
+----------------
 
 const array = ["oi", "tchau", "ta bom"]
 
@@ -76,6 +93,8 @@ console.log(filme)
 //------------------------------ .sort() ele reeorganiza os elementos em forma crescente, assim os elementos vao ter permanentemente o novo indice! lembrando que o sort pode ser configurado no () para ter uma ordenação em especifico!
 
 //------------------------------ .reverse() ele reeorganiza os elementos deixando todos invertidos, ent array[1,2,3,4] com o array.sort() vai ficar array[4,3,2,1]
+
+// lembrando que o CONTINUE finaliza aquele loop e reinicia, ou seja, tudo em baixo do codigo sera ignorado.
 
 /* exer:
 1-
@@ -196,3 +215,27 @@ o valor 3 apareceu ${dado3}
 o valor 4 apareceu ${dado4}
 o valor 5 apareceu ${dado5}
 o valor 6 apareceu ${dado6}`)
+
+/*
+
+posso trabalhar com um array dentro do outro, ou seja:
+
+let a = ["a","b","C",[1,2,3,4,5]]
+
+console.log(a[3]) ira retornar [1,2,3,4,5] pq ele conta a array dentro dessa array como um valor so
+console.log(a[3].length) ira retornar o tamanho dessa array que esta dentro da array
+console.log(a[3][0]) ira retornar o valor 1 pq ele pega o 3 indice na array a e depois pega o indice 0 na array que estava dentro
+
+----------------------
+
+let a = ["a","b","C",["abc","def","ghi","jkl","mno"]]
+
+console.log(a[3][4][0]) ira retornar o valor "m", resumindo, ele "entra" no array a, entra depois no indice 4 e finalmente ali ele encontra o valor que tem o indice 0
+
+! ele inverte o resultado, exemplo:
+
+isNaN = n é numero 
+
+!isNaN = é numero!
+
+*/
