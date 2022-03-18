@@ -87,6 +87,8 @@ console.log(filme)
 //------------------------------ .shift() mesma coisa do .pop() so que ele remove e retorna o primeiro elemento do array
 
 //------------------------------ .splice() é o que eu ja usei, ele usa um, dois, tres ou infinitos parametros, o primeiro é de apartir de qual ele vai começar a remover, o segundo é quantos elementos ele vai remover, ou seja, .splice(2, 1) ele vai remover a partir do indice 2, e vai tirar um so elemento. a partir do terceiro elemento ele vai adicionar aquela informação no array! ex: oi.splice(2, 1, "oi", "tchau"): ele remove a partir do segundo indice, removendo um elemento e depois adiciona o elemento "oi" e "tchau" no final!
+//deixando o 0 no segundo parametro ele n ira remover nada, so ira adicionar a informação no indice (primeiro parametro)
+
 
 //------------------------------ .fill() ele preenche todos elementos com algum valor, ou seja, array.fill("oi", 1, 4) ele vai substituir todos os valores a partir do indice um para "oi" ate um indice anterior do que o 4!
 
