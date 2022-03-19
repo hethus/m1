@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
 
-// for --------------------------------
+// for indexado: --------------------------------
 
 // mais utilizado como laço de repetição para quantidades determinadas! ao contrario do while que é geralmente utilizado para indeterminadas
 
@@ -26,6 +26,52 @@ const prompt = require("prompt-sync")();
 //     console.log(filmes[i]);
 // };
 
+// for of: ------------------
+
+//esse for ele so servira quando precisamos de apenas o valor de um array:
+
+//ele tbm pode servir para obter índice, usando indexOf!
+//PROBLEMA: ele não acha valor repetido no array!
+
+// let lista = ["oi", "a", "b", "c"]
+
+// for (let i of lista) {
+//     if(i == "oi"){
+//     i = "aaaa"
+//     }
+//     console.log(i)
+//}
+
+// for in: -------------------
+
+//esse for so serve quando precisamos de apenas o índice de um array:
+
+//esse funciona para obter índice e valor, usando o lista[i]
+//PROBLEMA: ele retorna o índice como string!
+
+// let lista = ["oi", "a", "b", "c", "d"]
+
+// for (const i in lista) {
+//     console.log(i)
+//     console.log(lista[i])
+
+//} --------- 1-
+
+// const coluna = +prompt("coluna: ")
+// const linhas = +prompt("linhas: ")
+
+
+// for (let linhaAtual = 0; linhaAtual < linhas; linhaAtual++) {
+
+//     const lista = []
+    
+//     for(let i = linhaAtual; i < linhaAtual + coluna; i++){
+//         lista.push(i)    
+// }
+// console.log(lista)
+// console.log()
+// }
+
 // --------- 2-
 
 // numero = +prompt("numero? ")
@@ -49,3 +95,20 @@ const prompt = require("prompt-sync")();
 //     }
 // };
 
+
+// OUTRO EXEMPLO:
+
+for(let numero = 0; numero < 10; numero++){
+    const tabuadas = []
+
+
+    for(let i = 0; i <= 10; i++){
+        
+        const tabuada = numero * i
+    
+            tabuadas.push(tabuada)
+        console.log(`${numero} x ${i} = ${tabuada}`)
+    
+    }
+    console.log(tabuadas)
+}
