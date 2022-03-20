@@ -98,17 +98,19 @@ const prompt = require("prompt-sync")();
 
 // OUTRO EXEMPLO:
 
-for(let numero = 0; numero < 10; numero++){
-    const tabuadas = []
+// for(let numero = 0; numero < 10; numero++){
+//     const tabuadas = []
 
 
-    for(let i = 0; i <= 10; i++){
+//     for(let i = 0; i <= 10; i++){
         
-        const tabuada = numero * i
+//         const tabuada = numero * i
     
-            tabuadas.push(tabuada)
-        console.log(`${numero} x ${i} = ${tabuada}`)
+//             tabuadas.push(tabuada)
+//         console.log(`${numero} x ${i} = ${tabuada}`)
     
-    }
-    console.log(tabuadas)
-}
+//     }
+//     console.log(tabuadas)
+// }
+
+// 4-
