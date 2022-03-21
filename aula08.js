@@ -114,3 +114,24 @@ const prompt = require("prompt-sync")();
 // }
 
 // 4-
+
+const carros = ['Renault Kwid 1.0', 'Chevrolet Onix Plus 1.0', 'Chevrolet Onix 1.0', 'Hyundai HB20S', 'Renault Logan 1.0']
+const consumo = [14.9, 14.3, 13.9, 13.7, 13.6]
+let litros = 0
+let custo = 5.50
+let calculo = 0
+
+let menor = consumo.indexOf(Math.min(...consumo))
+
+for (const i in carros) {
+    console.log(`Carro: ${carros[i]}`)
+    console.log(`Consumo: ${consumo[i]} L/Km`)
+
+    litros = Math.ceil(1000 / consumo[i])
+    calculo = (custo * litros).toFixed(2)
+
+    console.log(`Ele irá gastar ${litros} litros em uma viagem de 1000 km, o valor total será ${calculo} Reais!`)
+    console.log()
+}
+
+console.log(`Menor consumo é o do carro: ${carros[menor]} com ${consumo[menor]} Litros por Km!`)
