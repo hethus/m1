@@ -2,6 +2,8 @@ const prompt = require("prompt-sync")();
 
 // ---- function:
 
+// INTERESSANTE, por padrão toda function tem como resultado o undefined, o return que muda isso!!!!!!!
+
 // uma maneira de automatizar uma parte da programação, onde ela pode ser chamada para outras coisas, economizando linhas e deixando o código mais otimizado
 // ela pode ser usada sem return e sem parâmetros(argumentos), tem vários jeitos!
     // LEMBRANDO QUE USAR VARIÁVEIS QUE NÃO ESTÃO DENTRO DELA NÃO É UMA BOA PRATICA!!!! TENTAR EVITAR:
