@@ -131,3 +131,6 @@ const prompt = require("prompt-sync")();
 // let c = prompt('operação (+, -, *, /): ');
 
 // calc(a, c, b);
+
+
+// 2-
