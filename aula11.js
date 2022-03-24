@@ -10,6 +10,7 @@ const prompt = require("prompt-sync")();
     // o certo é se for usar variáveis dentro dela, declarar elas lá dentro!
 
 // a diferença entre parâmetro e argumento é que parâmetro é quando se declara e quando ele é suado, ele é argumento!
+// pode ter um parâmetro predefinido, onde se nenhum outro valor for declarado ele usara aquele ja estabelecido, igual: function exemplo(a, b = 'oi'){}
 
 // ex:
 
