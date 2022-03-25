@@ -148,3 +148,65 @@ const prompt = require("prompt-sync")();
 // let resultado = transformarData(a);
 
 // console.log(resultado);
+
+// 3-
+
+// function converterTemp(valor, tipo, conversao){
+//     let celsius = 0;
+//     let fahrenheit = 0;
+//     let kelvin = 0;
+
+//     if(tipo === 'c'){
+//         celsius = valor;
+//         fahrenheit = (valor * 9/5) + 32;
+//         kelvin = valor + 273.15;
+//     }else if(tipo === 'f'){
+//         fahrenheit = valor;
+//         celsius = (valor - 32) * 5/9;
+//         kelvin = (valor + 459.67) * 5/9;
+//     }else if(tipo === 'k'){
+//         kelvin = valor;
+//         celsius = valor - 273.15;
+//         fahrenheit = (valor * 9/5) - 459.67;
+//     };
+//     console.log(`
+//     --- Conversor de temperatura ---
+
+//     ${celsius}°C
+//     ${fahrenheit}°F
+//     ${kelvin}K`);
+
+
+//     if(conversao === 'c'){
+//         return celsius;
+//     }else if(conversao === 'f'){
+//         return fahrenheit;
+//     }else if(conversao === 'k'){
+//         return kelvin;
+//     }else{
+//         return 'erro';
+//     }
+    
+// };
+
+// function unidade(tipo){
+//     if(tipo === 'c'){
+//         return '°C';
+//     }else if(tipo === 'f'){
+//         return '°F';
+//     }else if(tipo === 'k'){
+//         return 'K';
+//     };
+// }
+
+// let a = +prompt('valor: ');
+// let b = prompt('tipo: ');
+// let c = prompt(`vai retornar qual tipo (c, f ou k: )? `);
+// let d = converterTemp(a, b, c);
+// let e = unidade(c);
+
+// console.log(`
+// o valor foi convertido para ${d}${e}`);
+
+// 4-
+
