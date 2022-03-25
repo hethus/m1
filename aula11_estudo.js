@@ -45,6 +45,7 @@ const prompt = require("prompt-sync")();
 // ---- forEach:
 
 // forEach é uma função que percorre todos os elementos de um array e executa uma função para cada um deles.
+// é como se fosse uma mistura de for in e for of, ainda mais pq sempre me traz o array inteiro!
 // ou seja, para cada execução do forEach, ele executa 3 parâmetros, o primeiro é o índice, o segundo é o valor do índice e o terceiro é a lista completa
 // ex:
     // function funcArray(a, b, c){
