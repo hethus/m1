@@ -10,3 +10,15 @@ const prompt = require("prompt-sync")();
 // let b = 4
 
 // console.log(funcaoUm(a, b))
+
+// -------------------------------------
+
+// ---- Objects:
+
+// DAORA: objeto nada mais é que um array, mas que o índice tem nomes!
+
+
+
+
+
+
