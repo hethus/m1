@@ -106,11 +106,6 @@ const prompt = require("prompt-sync")();
 
 // console.log(resultadoTeste) // mostra o valor retornado e que foi armazenado na variável
 
-
-
-
-
-
 //// ---------------------------------------- Exercicios:
 
 //1-
@@ -135,3 +130,21 @@ const prompt = require("prompt-sync")();
 
 
 // 2-
+
+// function transformarData(data){
+//     let dataArray = data.split('/'); // aqui ele separa a data em um array, ou seja, ele pega o valor da data e separa em um array, ou seja, ele pega o dia, o mês e o ano e coloca em um array
+//     let dia = dataArray[0];
+//     let mes = dataArray[1];
+//     let ano = dataArray[2];
+//     let meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+//     if(dia < 31 && dia > 0 && mes < 13 && mes > 0 && ano > 0 && ano < 2022){
+//         return `${dia} de ${meses[mes - 1]} de ${ano}`; // aqui ele pega o mes e coloca como índice, encontrando o mes por extenso no array meses, ai ele pega o dia e o ano tbm e mostra em um console!
+//     } else {
+//         return null;
+//     }
+// };
+
+// let a = prompt('data: ');
+// let resultado = transformarData(a);
+
+// console.log(resultado);
