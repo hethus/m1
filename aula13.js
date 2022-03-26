@@ -36,11 +36,39 @@ const prompt = require("prompt-sync")();
 // um dos jeitos mais simples para adicionar uma chave a partir de uma VARIÁVEL no objeto é usando o [], ou seja:
 
     //let a = prompt('chave: ');
-    //objeto[a] = valor;
+    //objeto["a"] = valor;
 // OBS, TOMAR CUIDADO COM ESSE MÉTODO. Pq se a chave existir ele só mudará o valor da chave não irá criar uma nova com o mesmo nome :(
 // se tiver uma lista dentro de um objeto, posso usar splice, push, pop, etc. normalmente, exemplo: objeto.lista[índice].push(valorNovo)
 
 // IMPORTANTE, cuidado quando for tentar passar um object para um array, pq se o objeto estiver rodando em um for e ele estiver definido fora do for, ele apresentará erros!
+
+// acessar objeto com objeto["chave"] é igual quando se acessa um array com array[índice]!
+
+// ------- IMPORTANTE:
+
+// se um objeto n tiver nenhum valor, ele ira procurar preencher aqueles valores com alguma variável de fora do objeto! ex:
+
+    // const nome = 'João';
+    // const pessoa = { nome }
+    // console.log(pessoa); // AGORA A CHAVE NOME ESTÁ PREENCHIDO COM A VARIÁVEL NOME QUE ELE CONSEGUIU ACHAR FORA DO OBJETO! 
+
+//ALÉM DISSO, A CHAVE PODE TER ESPAÇO, MAS AÍ TERIA QUE USAR ASPAS DUPLAS, EX:
+
+    // const pessoa = { "nome da pessoa": 'João' };
+    // console.log(pessoa["nome da pessoa"]); // QUE DAORA! a chave "nome da pessoa" me retorna o valor certinho, isso é bem legal de saber!
+
+// todos objetos tem que ter as mesmas chaves, para evitar erros e tudo mais!
+
+// funções que tiverem com base objetos, podem ser ser adicionadas dentro do objeto, como exemplo:
+    
+    // const pessoa = {nome: 'João', idade: 20, saudacao: function() { console.log(`Olá, meu nome é ${this.nome}`) } }
+    // pessoa.saudacao(); // ele chama a função dentro do objeto!
+
+// this é usado dentro de um objeto e em uma função, quando a função é executada o this ja sabe que o que tu precisa é aquele objeto!
+
+
+
+
 
 
 
